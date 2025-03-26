@@ -271,7 +271,7 @@ public class ParquetOperations {
 		}
 
 		public Long toLong(String timestamp, Schema schema, LogicalType type) {
-			return new Long(timestamp);
+			return Long.parseLong(timestamp);
 		}
 	}
 }
